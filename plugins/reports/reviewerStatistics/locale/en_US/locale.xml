@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../locale/locale.dtd">
+<locale name="en_US" full_name="U.S. English">
+	<message key="plugins.generic.reviewerstatistics.name">Reviewers Statistics </message>
+	<message key="plugins.generic.reviewerstatistics.description">Reviewers Activities Statistics</message>
+	<message key="plugins.generic.reviewerstatistics.func">Reviewers Statistics</message>
+	<message key="plugins.generic.reviewerstatistics.articletabletitle">Table - Reviewers work by year</message>
+	<message key="plugins.generic.reviewerstatistics.legendas">Invited: revisions that reviewer was invited; Accept: revisions that reviewer accept to do; Completed: revisions that the reviewer completed; Declined: revision that the reviewer declined</message>
+</locale>

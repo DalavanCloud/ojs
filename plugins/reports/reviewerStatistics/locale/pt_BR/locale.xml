@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../locale/locale.dtd">
+<locale name="pt_BR" full_name="Português do Brasil">
+	<message key="plugins.generic.reviewerstatistics.name">Estatística de Trabalho dos  Revisores</message>
+	<message key="plugins.generic.reviewerstatistics.description">Estatística geral de atividades dos Revisores</message>
+	<message key="plugins.generic.reviewerstatistics.func">Estatística dos revisores</message>
+</locale>

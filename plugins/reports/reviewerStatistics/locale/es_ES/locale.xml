@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../locale/locale.dtd">
+<locale name="es_ES" full_name="Español (España)">
+	<message key="plugins.generic.sitestatistics.name">Estadística de Uso </message>
+	<message key="plugins.generic.sitestatistics.description">Estadística general de actividades de los Periódicos</message>
+	<message key="plugins.generic.sitestatistics.func">Estadística de los periodicos</message>
+	<message key="plugins.generic.sitestatistics.articletabletitle">Tabla - Artículos por mes</message>
+	<message key="plugins.generic.sitestatistics.legendas">Submt: Novas submissões; Accpt: Aceitos na revisão; Revreq: Revisões requeridas na revisão; Rejct: Rejeitado na revisão</message>
+</locale>
