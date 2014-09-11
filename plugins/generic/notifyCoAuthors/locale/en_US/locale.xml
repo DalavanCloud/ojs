@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/generic/sectionEditorOptions/locale/en_US/locale.xml
+  *
+  * Copyright (c) 2013-2014 Simon Fraser University Library
+  * Copyright (c) 2003-2014 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings
+  -->
+
+<locale name="en_US" full_name="U.S. English">
+	<message key="plugins.generic.notifyCoAuthors.displayName">Notify co-authors</message>
+	<message key="plugins.generic.notifyCoAuthors.description">Notify co-authors when submission process is completed. This plugin uses a prepared email with the key 'SUBMISSION_ACK_COAUTHORS'. You need to create it so the plugin can use it to send the extra email. You can use the following variables inside the template: {$authorName}, {$authorUsername}, {$editorialContactSignature}, {$articleTitle}, {$articleAbstract}</message>
+	<message key="plugins.generic.notifyCoAuthors.settings.saved">Notify co-authors plugin settings saved</message>
+</locale>
