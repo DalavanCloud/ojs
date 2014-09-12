@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/generic/sectionEditorOptions/locale/en_US/locale.xml
+  *
+  * Copyright (c) 2013-2014 Simon Fraser University Library
+  * Copyright (c) 2003-2014 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings
+  -->
+
+<locale name="en_US" full_name="U.S. English">
+	<message key="plugins.generic.sectionEditorOptions.displayName">Section Editor Workflow Options</message>
+	<message key="plugins.generic.sectionEditorOptions.description">Define options to customize the section editor role in the submission workflow process, limiting operations one can execute.</message>
+	<message key="plugins.generic.sectionEditorOptions.settings.saved">Section Editor Options plugin settings saved</message>
+	
+	<message key="plugins.generic.sectionEditorOptions.settings.workflowOptions">Section editor workflow options:</message>
+	<message key="plugins.generic.sectionEditorOptions.settings.denyEditorialDecision">Deny editorial decision recording</message>
+	<message key="plugins.generic.sectionEditorOptions.settings.denyEditorialDecision.description">All section editors of this journal will not be able to record an editorial decision.</message>
+	<message key="plugins.generic.sectionEditorOptions.settings.denyContact">Deny email contact</message>
+	<message key="plugins.generic.sectionEditorOptions.settings.denyContact.description">All section editors of this journal will not be able to contact authors.</message>
+	<message key="plugins.generic.sectionEditorOptions.settings.denyReviewFilesAccess">Deny review files access</message>
+	<message key="plugins.generic.sectionEditorOptions.settings.denyReviewFilesAccess.description">All section editors of this journal will not be able to download or upload review files.</message>
+	
+	<message key="plugins.generic.sectionEditorOptions.message.denyDecision">The current journal setting doesn't allow you to perform this operation.</message>
+	
+	<message key="plugins.generic.sectionEditorOptions.message.blockedInfo">Blinded</message>
+	<message key="plugins.generic.sectionEditorOptions.message.formBlockedInfo">This functionality is blocked.</message>
+</locale>
