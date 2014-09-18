@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/generic/reviewAskColors/locale/pt_BR/locale.xml
+  *
+  * Copyright (c) 2013-2014 Simon Fraser University Library
+  * Copyright (c) 2003-2014 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings
+  -->
+
+<locale name="pt_BR" full_name="Português (Brasil)">
+	<message key="plugins.generic.reviewAskColors.displayName">Cores da Avaliação</message>
+	<message key="plugins.generic.reviewAskColors.description">Define cores para cada estado da avaliação exibido nas listas de submissão, na coluna Avaliação.</message>
+	<message key="plugins.generic.reviewAskColors.settings.saved">Configurações do plugin de cores da avaliação salvas com sucesso</message>
+</locale>
