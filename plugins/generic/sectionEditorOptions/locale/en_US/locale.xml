@@ -18,11 +18,11 @@
 	
 	<message key="plugins.generic.sectionEditorOptions.settings.workflowOptions">Section editor workflow options:</message>
 	<message key="plugins.generic.sectionEditorOptions.settings.denyEditorialDecision">Deny editorial decision recording</message>
-	<message key="plugins.generic.sectionEditorOptions.settings.denyEditorialDecision.description">All section editors of this journal will not be able to record an editorial decision.</message>
+	<message key="plugins.generic.sectionEditorOptions.settings.denyEditorialDecision.description">The section editor won't be able to finish a review and record a final decision.</message>
 	<message key="plugins.generic.sectionEditorOptions.settings.denyContact">Deny email contact</message>
-	<message key="plugins.generic.sectionEditorOptions.settings.denyContact.description">All section editors of this journal will not be able to contact authors.</message>
-	<message key="plugins.generic.sectionEditorOptions.settings.denyReviewFilesAccess">Deny review files access</message>
-	<message key="plugins.generic.sectionEditorOptions.settings.denyReviewFilesAccess.description">All section editors of this journal will not be able to download or upload review files.</message>
+	<message key="plugins.generic.sectionEditorOptions.settings.denyContact.description">Avoid contact between author and section editor, hiding contact and identity information from both, and also blocking email exchange. To make this option function properly, the editor must include itself and then select a section editor.</message>
+	<message key="plugins.generic.sectionEditorOptions.settings.denyReviewFilesAccess">Deny review files upload</message>
+	<message key="plugins.generic.sectionEditorOptions.settings.denyReviewFilesAccess.description">Block review file version upload.</message>
 	
 	<message key="plugins.generic.sectionEditorOptions.message.denyDecision">The current journal setting doesn't allow you to perform this operation.</message>
 	
