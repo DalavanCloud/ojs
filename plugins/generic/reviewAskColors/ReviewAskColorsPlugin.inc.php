@@ -89,8 +89,10 @@ class ReviewAskColorsPlugin extends GenericPlugin {
 		$templateFile = $args[1];
 
 		if ($templateFile === 'editor/submissions.tpl') {
-			$smarty->register_prefilter(array(&$this, 'addStateStylesPreFilter'));
+			$smarty->register_prefilter(array(&$this, 'addPluginInfoPreFilter'));
 
+			HookRegistry::register('ReviewAskColorsPlugin::reviewAskCell', array(&$this, 'reviewAskCellCallback'));
+			
 			// Add the plugin stylesheet.
 			$baseImportPath = Request::getBaseUrl() . DIRECTORY_SEPARATOR . $this->getPluginPath() . DIRECTORY_SEPARATOR;
 			$smarty->addStyleSheet($baseImportPath . 'css/reviewAskColorsPlugin.css');
@@ -101,12 +103,12 @@ class ReviewAskColorsPlugin extends GenericPlugin {
 
 	/**
 	 * Change the template output before it's compiled,
-	 * adding the code necessary to present the review states.
+	 * adding the code necessary to present this plugin's info.
 	 * @param $output string
 	 * @param $smarty Smarty
 	 * @return string
 	 */
-	function addStateStylesPreFilter($output, &$smarty) {
+	function addPluginInfoPreFilter($output, &$smarty) {
 		if (strpos($output, ' * templates/editor/submissionsInReview.tpl') !== false) {
 
 			// Remove the check to avoid cancelled or declined, now we want
@@ -118,10 +120,15 @@ class ReviewAskColorsPlugin extends GenericPlugin {
 			// add the review assignment state style.
 			$reviewAskCellString = 'style="padding: 0 4px 0 0; font-size: 1.0em">{if $assignment->getDateNotified()}{$assignment->getDateNotified()|date_format:$dateFormatTrunc}{else}&mdash;{/if}</td>';
 			$output = str_replace($reviewAskCellString, '{call_hook name="ReviewAskColorsPlugin::reviewAskCell"} ' . $reviewAskCellString, $output);
-			HookRegistry::register('ReviewAskColorsPlugin::reviewAskCell', array(&$this, 'reviewAskCellCallback'));
 
 			$dueString = '{if $assignment->getDateCompleted() || !$assignment->getDateConfirmed()}&mdash;{else}{$assignment->getWeeksDue()|default:"&mdash;"}{/if}';
 			$output = str_replace($dueString, $checkCancelledOrDeclinedString . $dueString . '{/if}', $output);
+		}
+
+		if (strpos($output, ' * templates/editor/submissions.tpl') !== false) {
+			// Add this plugin notes related to the review ask colors.
+			$stringToReplace = '{translate key="editor.submissionReview.notes"}';
+			$output = str_replace($stringToReplace, $stringToReplace . '{translate key="plugins.generic.reviewAskColors.submissionReview.notes"}', $output); 
 		}
 
 		return $output;

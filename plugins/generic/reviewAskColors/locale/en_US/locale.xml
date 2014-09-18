@@ -15,4 +15,11 @@
 	<message key="plugins.generic.reviewAskColors.displayName">Review ask colors</message>
 	<message key="plugins.generic.reviewAskColors.description">Define colors for each peer review state shown in article lists, peer review ask column.</message>
 	<message key="plugins.generic.reviewAskColors.settings.saved">Review ask colors plugin settings saved</message>
+	<message key="plugins.generic.reviewAskColors.submissionReview.notes"><![CDATA[
+        	<div class="reviewAskDueNotesWrapper">
+		<div class="review_ask_colors_plugin_notes_reviewCompleted">Dates marked in blue represent reviews that have been concluded.</div>
+	        <div class="review_ask_colors_plugin_notes_reviewProcess">Dates marked in green represent reviews in process that are within the designated deadline.</div>
+        	<div class="review_ask_colors_plugin_notes_reviewLate">Dates marked in red represent reviews in process that are not within the designated deadline.</div>
+	        <div>Dates striked-through represent regrets or cancels.</div></div>
+        ]]></message>
 </locale>

@@ -2,14 +2,30 @@
 	text-decoration: line-through;
 }
 
-.review_ask_colors_plugin_completed {
+.review_ask_colors_plugin_completed,
+.review_ask_colors_plugin_notes_reviewCompleted {
 	color: blue;
 }
 
-.review_ask_colors_plugin_delayed {
+.review_ask_colors_plugin_delayed,
+.review_ask_colors_plugin_notes_reviewLate {
 	color: red;
 }
 
-.review_ask_colors_plugin_noDelay {
+.review_ask_colors_plugin_noDelay,
+.review_ask_colors_plugin_notes_reviewProcess {
 	color: green;
+}
+
+.reviewAskDueNotesWrapper {
+	margin-left: 59px;
+	margin-top: -9px;
+}
+
+.reviewAskDueNotesWrapper div {
+	display: list-item;
+	list-style: circle inside;
+}
+.review_ask_colors_plugin_notes_reviewCompleted {
+
 }
