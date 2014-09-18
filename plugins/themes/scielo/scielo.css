@@ -82,6 +82,10 @@ form {
 	border-top: none;
 }
 
+#content ul.menu {
+	margin-bottom: 10px;
+}
+
 #navbar {
 	border-bottom: none;
 }
