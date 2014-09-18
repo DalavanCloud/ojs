@@ -37,7 +37,7 @@
 	<!-- Common Messages -->
 	<message key="common.openJournalSystems">Open Journal Systems</message>
 	<message key="navigation.current">Atual</message>
-	<message key="navigation.otherJournals">Outras revistas</message>
+	<message key="navigation.otherJournals">Outros periódicos</message>
 	<message key="navigation.journalHelp">Ajuda do sistema</message>
 	<message key="navigation.browseByIssue">Por Edição</message>
 	<message key="navigation.browseByAuthor">Por Autor</message>
@@ -80,7 +80,7 @@
 	<message key="article.authors">Autores</message>
 	<message key="article.indexingInformation">Informação para indexação</message>
 	<message key="article.metadata">Metadados</message>
-	<message key="article.journalSection">Seção da revista</message>
+	<message key="article.journalSection">Seção do periódico</message>
 	<message key="article.file">Documento</message>
 	<message key="article.suppFile">Documento Suplementar</message>
 	<message key="article.suppFiles">Documento(s) suplementar(es)</message>
@@ -152,7 +152,7 @@
 
 	<!-- User -->
 	<message key="user.showAllJournals">Mostrar Revistas</message>
-	<message key="user.registerForOtherJournals">Cadastrar em outras revistas</message>
+	<message key="user.registerForOtherJournals">Cadastrar em outros periódicos</message>
 	<message key="user.myJournals">Minhas Revistas</message>
 	
 	<!-- Roles -->
@@ -243,11 +243,11 @@
 
 	<!-- Site Administration -->
 
-	<message key="admin.settings.oaiRegistrationDescription"><![CDATA[Para indexar todo o conteúdo das revistas hospedadas neste portal em um sistema global de bases de dados de pesquisa integradas, <a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">cadastre</a> a URL do portal no <a href="http://pkp.sfu.ca/harvester/" target="_blank">coletador de metadados</a> do Public Knowledge Project. Esta ferramenta coleta os metadados de cada item indexado na revista, permitindo pesquisa coletiva e precisa dentro dos portais que adotam o <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank">Protocolo de Arquivos Abertos para Coleta de Metadados - OAI PMH</a>.
+	<message key="admin.settings.oaiRegistrationDescription"><![CDATA[Para indexar todo o conteúdo dos periódicos hospedados neste portal em um sistema global de bases de dados de pesquisa integradas, <a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">cadastre</a> a URL do portal no <a href="http://pkp.sfu.ca/harvester/" target="_blank">coletador de metadados</a> do Public Knowledge Project. Esta ferramenta coleta os metadados de cada item indexado no periódico, permitindo pesquisa coletiva e precisa dentro dos portais que adotam o <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank">Protocolo de Arquivos Abertos para Coleta de Metadados - OAI PMH</a>.
 <br /><br />
 <a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">Clique aqui</a> e insira <span class="highlight">{$siteUrl}</span> no campo <strong>URL do Portal</strong>, e <span class="highlight">{$oaiUrl}</span> no campo <strong>URL Base para o Arquivo OAI</strong>.
 <br /><br />
-Note que a interface OAI pode ser desativada para este portal nas configurações do sistema. Futuras versões do OJS permitirão ativar ou desativar a interface OAI para revistas, individualmente.]]></message>
+Note que a interface OAI pode ser desativada para este portal nas configurações do sistema. Futuras versões do OJS permitirão ativar ou desativar a interface OAI para o periódicos, individualmente.]]></message>
 
 	
 	
@@ -292,16 +292,16 @@ Note que a interface OAI pode ser desativada para este portal nas configuraçõe
 
 
 
-	<message key="manager.setup.lockssDescription"><![CDATA[O sistema <a href="http://www.lockss.org/" target="_blank">LOCKSS</a> (Lots of Copies Keep Stuff Safe - Muitas Cópias Mantém as Coisas Seguras) para assegurar arquivamento seguro e permanente do cache da sua revista, é suportado pelo OJS. LOCKSS é um software livre desenvolvido pela Biblioteca da Universidade de Stanford, que permite preservar revistas online escolhidas ao sondar as páginas das mesmas por conteúdo recém publicado e arquivando-o. Cada arquivo é continuamente validado contra cópias de outras bibliotecas. Caso o conteúdo esteja corrompido ou perdido, as cópias são usadas para restauração.
+	<message key="manager.setup.lockssDescription"><![CDATA[O sistema <a href="http://www.lockss.org/" target="_blank">LOCKSS</a> (Lots of Copies Keep Stuff Safe - Muitas Cópias Mantém as Coisas Seguras) para assegurar arquivamento seguro e permanente do cache da seu periódico, é suportado pelo OJS. LOCKSS é um software livre desenvolvido pela Biblioteca da Universidade de Stanford, que permite preservar periódicos online escolhidas ao sondar as páginas das mesmas por conteúdo recém publicado e arquivando-o. Cada arquivo é continuamente validado contra cópias de outras bibliotecas. Caso o conteúdo esteja corrompido ou perdido, as cópias são usadas para restauração.
 <br /><br />
 Configurar o suporte ao LOCKSS para o OJS é necessário somente após a publicação de uma edição estar quase completa, bastando seguir os passos a seguir:]]></message>
 	
 	<!-- Setup Step 3 -->
-	<message key="manager.setup.subjectClassificationDescription"><![CDATA[A revista utiliza um sistema de classificação de assunto disponível na web.<br />
+	<message key="manager.setup.subjectClassificationDescription"><![CDATA[A periódico utiliza um sistema de classificação de assunto disponível na web.<br />
 Título do sistema de classificação:]]></message>
-	<message key="manager.setup.registerJournalForIndexingDescription"><![CDATA[Para ter o conteúdo desta revista indexado dentro de um sistema global de distribuição de bases de pesquisa, <a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">cadastre</a> a URL da revista no <a href="http://pkp.sfu.ca/harvester/" target="_blank">Coletador de Metadados</a> do Public Knowledge Project. Esta ferramenta coleta os metadados de cada item indexado desta revista, possibilitando buscas coletivas e precisas entre os portais de pesquisa que utilizam o protocolo de coleta de metadados do <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank">Open Archives Initiative, OAI-PMH</a>.
+	<message key="manager.setup.registerJournalForIndexingDescription"><![CDATA[Para ter o conteúdo deste periódico indexado dentro de um sistema global de distribuição de bases de pesquisa, <a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">cadastre</a> a URL do periódico no <a href="http://pkp.sfu.ca/harvester/" target="_blank">Coletador de Metadados</a> do Public Knowledge Project. Esta ferramenta coleta os metadados de cada item indexado deste periódico, possibilitando buscas coletivas e precisas entre os portais de pesquisa que utilizam o protocolo de coleta de metadados do <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank">Open Archives Initiative, OAI-PMH</a>.
 <br /><br />
-Caso o administrador do portal já tenha cadastrado a revista no portal do Coletador do PKP, a revista será automaticamente indexada, sem necessidade de registro individual.
+Caso o administrador do portal já tenha cadastrado o periódico no portal do Coletador do PKP, o periódico será automaticamente indexada, sem necessidade de registro individual.
 <br /><br />
 <a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">Clique aqui</a> e digite <span class="highlight">{$siteUrl}</span> no campo <strong>Site URL</strong>, e <span class="highlight">{$oaiUrl}</span> no campo <strong>Base URL for OAI Archive</strong>.]]></message>
 
@@ -326,7 +326,7 @@ Escolha um modelo para administrar os aspectos do processo editorial. (Para desi
 	<message key="manager.people.noAdministrativeRights"><![CDATA[Você não possui direitos administrativos sobre este usuário porque:
 		<ul>
 			<li>O usuário é o administrador do portal</li>
-			<li>O usuário está ativo em uma revista que você não administra</li>
+			<li>O usuário está ativo em uma periódico que você não administra</li>
 		</ul>
 	Esta tarefa deve ser executada por um administrador do portal.]]></message>
 
@@ -424,7 +424,7 @@ Ativo indica avaliação em consideração ou andamento.]]></message>
 	<message key="reviewer.article.decision.accept">Aceitar</message>
 	<message key="reviewer.article.decision.pendingRevisions">Correções obrigatórias</message>
 	<message key="reviewer.article.decision.resubmitHere">Submeter novamente para avaliação</message>
-        <message key="reviewer.article.decision.resubmitElsewhere">Submeter a outra revista</message>
+        <message key="reviewer.article.decision.resubmitElsewhere">Submeter a outro periódico</message>
 	<message key="reviewer.article.decision.decline">Rejeitar</message>
 	<message key="reviewer.article.decision.seeComments">Ver comentários</message>
 	<message key="reviewer.article.schedule">Agendar</message>
@@ -461,12 +461,12 @@ Ativo indica avaliação em consideração ou andamento.]]></message>
 	<!-- Article Submission Step 2 -->
 	
 	<!-- Article Submission Step 3 -->
-	<message key="author.submit.uploadInstructions"><![CDATA[<p>Para transferir um manuscrito para a revista, execute os seguintes passos:</p>
+	<message key="author.submit.uploadInstructions"><![CDATA[<p>Para transferir um manuscrito para o periódico, execute os seguintes passos:</p>
 <ol>
 <li>Nesta página, clique em Procurar (Browse ou Arquivo, dependendo do navegador), e localize o documento no disco rígido do seu computador (ou em outro local de armazenamento, como o cd-rom ou pendrive)</li>
 <li>Localize o documento desejado e selecione-o.</li>
 <li>Clique em Abrir na janela de seleção de arquivo. O sistema usará automaticamente o documento selecionado na janela Transferir Documento para Submissão.</li>
-<li>Clique em Transferir, para enviar o documento do seu computador para o servidor de hospedagem da revista. O sistema dará um novo nome ao documento seguindo um padrão de nomenclatura próprio para controle interno.</li>
+<li>Clique em Transferir, para enviar o documento do seu computador para o servidor de hospedagem do periódico. O sistema dará um novo nome ao documento seguindo um padrão de nomenclatura próprio para controle interno.</li>
 <li>Uma vez transferido, clique em Salvar e Continuar no final da página.</li>
 </ol>]]></message>
 	
@@ -538,19 +538,19 @@ Ativo indica avaliação em consideração ou andamento.]]></message>
 	<!-- Profile -->
 	
 	<!-- Registration -->
-	<message key="user.register.selectJournal">Escolha em qual revista realizar o cadastro</message>
-	<message key="user.register.noJournals">Não há revistas para se cadastrar neste portal.</message>	
+	<message key="user.register.selectJournal">Escolha em qual periódico realizar o cadastro</message>
+	<message key="user.register.noJournals">Não há periódicos para se cadastrar neste portal.</message>	
 	<message key="user.register.privacyStatement">Política de Privacidade</message>
-	<message key="user.register.alreadyRegisteredOtherJournal"><![CDATA[<a href="{$registerUrl}">Clique aqui</a> caso já possua cadastro em alguma revista do portal.]]></message>
-	<message key="user.register.notAlreadyRegisteredOtherJournal"><![CDATA[<a href="{$registerUrl}">Clique aqui</a> caso <strong>não</strong> tenha se cadastrado nesta ou em outra revista do portal.]]></message>
-	<message key="user.register.loginToRegister">Digite o login e senha para cadastrar-se na revista.</message>
+	<message key="user.register.alreadyRegisteredOtherJournal"><![CDATA[<a href="{$registerUrl}">Clique aqui</a> caso já possua cadastro em alguma periódico do portal.]]></message>
+	<message key="user.register.notAlreadyRegisteredOtherJournal"><![CDATA[<a href="{$registerUrl}">Clique aqui</a> caso <strong>não</strong> tenha se cadastrado nesta ou em outra periódico do portal.]]></message>
+	<message key="user.register.loginToRegister">Digite o login e senha para cadastrar-se no periódico.</message>
 	<message key="user.register.registrationDisabled">Cadastro de usuários desativado no momento.</message>
 	<message key="user.register.form.passwordLengthTooShort">Senha digitada não contém o mínimo de caracteres.</message>
-	<message key="user.register.readerDescription">Notificado via e-mail da publicação de nova edição da revista.</message>
-	<message key="user.register.openAccessNotificationDescription">Notificado via e-mail quando edições da revista se tornarem de Acesso Livre.</message>
-	<message key="user.register.authorDescription">Pode submeter à revista.</message>
-	<message key="user.register.reviewerDescriptionNoInterests">Disponível para realizar avaliação pelos pares das submissões a esta revista.</message>	
-	<message key="user.register.reviewerDescription">Disponível para realizar avaliação pelos pares das submissões a esta revista. Identifique a área de avaliação (áreas de interesses e metodologias de pesquisa).</message>	
+	<message key="user.register.readerDescription">Notificado via e-mail da publicação de nova edição do periódico.</message>
+	<message key="user.register.openAccessNotificationDescription">Notificado via e-mail quando edições do periódico se tornarem de Acesso Livre.</message>
+	<message key="user.register.authorDescription">Pode submeter ao periódico.</message>
+	<message key="user.register.reviewerDescriptionNoInterests">Disponível para realizar avaliação pelos pares das submissões a este periódico.</message>	
+	<message key="user.register.reviewerDescription">Disponível para realizar avaliação pelos pares das submissões a este periódico. Identifique a área de avaliação (áreas de interesses e metodologias de pesquisa).</message>	
 
 
 
@@ -567,7 +567,7 @@ Ativo indica avaliação em consideração ou andamento.]]></message>
 <li>Termos irrelevantes são ignorados pelo sistema de busca</li>
 <li>São recuperados por padrão apenas artigos contendo <em>todos</em> os termos de busca (ex.: <strong>AND</strong> é implícito)</li>
 <li>Combine múltiplos termos com <strong>OR</strong> para encontrar artigos contendo um ou outro termo; ex.: <em>educação OR pesquisa</em></li>
-<li>Use parênteses para criar buscas mais complexas; ex.: <em>arquivo ((revista OR conferência) NOT teses)</em></li>
+<li>Use parênteses para criar buscas mais complexas; ex.: <em>arquivo ((periódico OR conferência) NOT teses)</em></li>
 <li>Use aspas duplas para recuperar o termo exato; ex.: <em>"Acesso Livre à informação"</em></li>
 <li>Exclua termos utilizando <strong>-</strong> ou <strong>NOT</strong>; ex.: <em>online -políticas</em> ou <em>online NOT políticas</em></li>
 <li>Use <strong>*</strong> como caracter coringa; ex.: <em>soci* moralidade</em> recuperará documentos contendo "sociedade" ou "sociológico"</li>
@@ -581,15 +581,15 @@ Ativo indica avaliação em consideração ou andamento.]]></message>
 	<message key="article.nonpdf.note"><![CDATA[O documento selecionado deverá ser baixado automaticamente. Em caso negativo, clique no atalho abaixo. Note que o documento pode requerer um visualizador especial ou plugin para ser executado.<br /><br />Caso o documento não seja baixado automaticamente, <a href="{$url}">clique aqui</a>.]]></message>
 	
 	<!-- Site index -->
-	<message key="site.journalsHosted">Revistas hospedadas no portal</message>
-	<message key="site.journalView">Acessar revista</message>
+	<message key="site.journalsHosted">Periódicos hospedados no portal</message>
+	<message key="site.journalView">Acessar periódico</message>
 	<message key="site.journalRegister">Cadastrar</message>
 	<message key="site.journalCurrent">Edição atual</message>
 	
 
 	<!-- Current index -->
 	<message key="current.current">Atual</message>
-	<message key="current.noCurrentIssueDesc">Esta revista ainda não publicou nenhuma edição.</message>
+	<message key="current.noCurrentIssueDesc">Este periódico ainda não publicou nenhuma edição.</message>
 	<message key="current.noCurrentIssue">Sem edição atual</message>
 
 	<!-- Archive index -->
@@ -600,7 +600,7 @@ Ativo indica avaliação em consideração ou andamento.]]></message>
 	<!-- About The Journal -->
 	<message key="about.statistics">Estatísticas</message>
 	<message key="about.journalContact">Endereço da Revista</message>
-	<message key="about.aboutTheJournal">Sobre a revista</message>
+	<message key="about.aboutTheJournal">Sobre o periódico</message>
 	<message key="about.editorialTeam">Equipe Editorial</message>
 	<message key="about.editorialTeam.biography">Biografia</message>
 	<message key="about.editorialPolicies">Políticas Editoriais</message>
@@ -610,7 +610,7 @@ Ativo indica avaliação em consideração ou andamento.]]></message>
 	<message key="about.sponsors">Editora</message>
 	<message key="about.contributors">Patrocínio</message>
 	<message key="about.onlineSubmissions">Submissões Online</message>
-	<message key="about.onlineSubmissions.haveAccount">Já possui um login/senha de acesso à revista {$journalTitle}?</message>
+	<message key="about.onlineSubmissions.haveAccount">Já possui um login/senha de acesso à periódico {$journalTitle}?</message>
 	<message key="about.onlineSubmissions.login">Acesso</message>
 	<message key="about.onlineSubmissions.needAccount">Não tem login/senha?</message>
 	<message key="about.onlineSubmissions.registration">Acesse a página de cadastro</message>
@@ -624,17 +624,17 @@ Ativo indica avaliação em consideração ou andamento.]]></message>
 	<message key="about.publicationFrequency">Periodicidade</message>
 	<message key="about.openAccessPolicy">Política de Acesso Livre</message>
 	<message key="about.delayedOpenAccess">Acesso Livre Adiado</message>
-	<message key="about.delayedOpenAccessDescription1">O conteúdo desta revista estará disponível para Acesso Livre</message>
+	<message key="about.delayedOpenAccessDescription1">O conteúdo deste periódico estará disponível para Acesso Livre</message>
 	<message key="about.delayedOpenAccessDescription2">mês(es) após a publicação da edição.</message>
 	<message key="about.authorSelfArchive">Autoarquivamento</message>
 	<message key="about.archiving">Arquivamento</message>
 	<message key="about.subscriptions">Assinaturas</message>
 	<message key="about.subscriptionsContact">Contato para Assinaturas</message>
 	<message key="about.availableSubscriptionTypes">Tipos de Assinaturas</message>
-	<message key="about.journalSponsorship">Patrocínio da revista</message>
+	<message key="about.journalSponsorship">Patrocínio do periódico</message>
 	<message key="about.aboutThisPublishingSystem">Sobre este sistema de publicação</message>
-	<message key="about.aboutOJSJournal"><![CDATA[A revista usa o Open Journal Systems (OJS {$ojsVersion}), sistema de código livre gratuito para a administração e a publicação de revistas, desenvolvido com suporte e distribuição pelo <a href="http://pkp.sfu.ca/">Public Knowledge Project</a> sob a licença GNU General Public License.]]></message>
-	<message key="about.aboutOJSSite"><![CDATA[O portal utiliza o Open Journal Systems (OJS {$ojsVersion}), sistema de código livre gratuito para a administração e a publicação de revistas desenvolvido com suporte e distribuição  pelo <a href="http://pkp.sfu.ca/">Public Knowledge Project</a> sob a licença GNU General Public License.]]></message>
+	<message key="about.aboutOJSJournal"><![CDATA[A periódico usa o Open Journal Systems (OJS {$ojsVersion}), sistema de código livre gratuito para a administração e a publicação de periódicos, desenvolvido com suporte e distribuição pelo <a href="http://pkp.sfu.ca/">Public Knowledge Project</a> sob a licença GNU General Public License.]]></message>
+	<message key="about.aboutOJSSite"><![CDATA[O portal utiliza o Open Journal Systems (OJS {$ojsVersion}), sistema de código livre gratuito para a administração e a publicação de periódicos desenvolvido com suporte e distribuição  pelo <a href="http://pkp.sfu.ca/">Public Knowledge Project</a> sob a licença GNU General Public License.]]></message>
 	
 	<!-- Announcement -->
 	
@@ -695,7 +695,7 @@ Ativo indica avaliação em consideração ou andamento.]]></message>
 <br /><br />
 O servidor atualmente tem suporte a mbstring: <strong>{$supportsMBString}</strong>]]></message>
 	<message key="installer.localeInstructions">O idioma padrão do sistema. Consulte a documentação caso deseje suporte a idiomas não listados.</message>
-	<message key="installer.additionalLocalesInstructions">Escolha qualquer idioma adicional para incluir no sistema. Os idiomas estarão disponíveis a todas as revistas hospedadas. Idiomas adicionais também podem ser instalados a qualquer tempo através da interface de administração via Web.</message>
+	<message key="installer.additionalLocalesInstructions">Escolha qualquer idioma adicional para incluir no sistema. Os idiomas estarão disponíveis a todos os periódicos hospedados. Idiomas adicionais também podem ser instalados a qualquer tempo através da interface de administração via Web.</message>
 	<message key="installer.filesDirInstructions">Digite o caminho físico completo para um diretório existente no servidor onde serão armazenados os documentos submetidos. Este diretório não deve possuir acesso direto via Web. Verifique se o diretório existe e se possui permissões de escrita antes da instalação. Os caminhos no Windows devem utilizar a barra delimitadora para frente, ex.: "C:/myjournal/files".</message>
 	<message key="installer.reinstallAfterDatabaseError"><![CDATA[<strong>AVISO:</strong> em caso de erro durante a instalação da base de dados, pode ser necessário eliminar a base de dados ou as tabelas antes de executar novamente a instalação.]]></message>
 	<message key="installer.overwriteConfigFileInstructions"><![CDATA[<h4>IMPORTANTE!</h4>
@@ -756,12 +756,12 @@ O servidor atualmente tem suporte a mbstring: <strong>{$supportsMBString}</stron
 	<!-- RT Settings -->
 	<message key="rt.admin.settings">Opções da Ferramenta de Leitura</message>
 
-	<message key="rt.admin.settings.description">A ferramenta de leitura é exibida em um frame ao lado dos itens publicados, nas seções da revista cuja indexação foi habilitada. A ferramenta consiste de itens opcionais relacionados ao item publicado, listados abaixo, e um conjunto de funcionalidades que proporcionam acesso a mais itens relacionados, organizados por área do conhecimento e atividade.</message>
-	<message key="rt.admin.settings.enableReadingTools">Habilitar Ferramenta de Leitura para as seções escolhidas da revista.</message>
+	<message key="rt.admin.settings.description">A ferramenta de leitura é exibida em um frame ao lado dos itens publicados, nas seções do periódico cuja indexação foi habilitada. A ferramenta consiste de itens opcionais relacionados ao item publicado, listados abaixo, e um conjunto de funcionalidades que proporcionam acesso a mais itens relacionados, organizados por área do conhecimento e atividade.</message>
+	<message key="rt.admin.settings.enableReadingTools">Habilitar Ferramenta de Leitura para as seções escolhidas do periódico.</message>
 	<message key="rt.admin.settings.relatedItems">Campo</message>
 	<message key="rt.admin.settings.relatedItemsLink"><![CDATA[Veja <a href="{$relatedItemsLink}" class="action">Conjuntos de itens relacionados</a> para visualizar, incluir, corrigir ou remover itens para cada campo.]]></message>
 
-	<message key="rt.admin.options">Opções dos itens da revista</message>
+	<message key="rt.admin.options">Opções dos itens do periódico</message>
 	<message key="rt.admin.relatedItems">Ferramentas para itens relacionados</message>
 	
 
@@ -789,7 +789,7 @@ A validação pode falhar em URLs para pesquisa que requeiram dados via método 
 
 	<message key="rt.beNotifiedWhen">Receber notificação quando...</message>
 
-	<message key="rt.thisJournal">Pesquisar nesta revista</message>
+	<message key="rt.thisJournal">Pesquisar neste periódico</message>
 	
 
 	<message key="rt.context.authorTermsDescription">Para documentos com mais de um autor, deixe todos os nomes marcados para pesquisar trabalhos com coautoria semelhante, ou pesquise um por vez marcando cada nome individualmente. Para saber mais sobre o recurso pesquisado, clique no símbolo de informação. Estes recursos foram escolhidos devido a sua relevância e acessibilidade aberta (gratuita) para todo ou parte do conteúdo.</message>
@@ -821,18 +821,18 @@ A validação pode falhar em URLs para pesquisa que requeiram dados via método 
 	<message key="plugins.categories.citationFormats.description">Plugins de Formatos de Citação oferecem aos usuários vários formatos para citar o documento.</message>
 	<message key="manager.setup.authorCopyrightNotice.sample"><![CDATA[<h3>Proposta de Aviso de Direito Autoral Creative Commons</h3>
 <h4>1. Proposta de Política para Periódicos de Acesso Livre</h4>
-Autores que publicam nesta revista concordam com os seguintes termos:
+Autores que publicam neste periódico concordam com os seguintes termos:
 <ol type="a">
-	<li>Autores mantém os direitos autorais e concedem à revista o direito de primeira publicação, com o trabalho simultaneamente licenciado sob a <a target="_new" href="http://creativecommons.org/licenses/by/3.0/">Licença Creative Commons Attribution</a> que permite o compartilhamento do trabalho com reconhecimento da autoria e publicação inicial nesta revista.</li>
-	<li>Autores têm autorização para assumir contratos adicionais separadamente, para distribuição não-exclusiva da versão do trabalho publicada nesta revista (ex.: publicar em repositório institucional ou como capítulo de livro), com reconhecimento de autoria e publicação inicial nesta revista.</li>
+	<li>Autores mantém os direitos autorais e concedem à periódico o direito de primeira publicação, com o trabalho simultaneamente licenciado sob a <a target="_new" href="http://creativecommons.org/licenses/by/3.0/">Licença Creative Commons Attribution</a> que permite o compartilhamento do trabalho com reconhecimento da autoria e publicação inicial neste periódico.</li>
+	<li>Autores têm autorização para assumir contratos adicionais separadamente, para distribuição não-exclusiva da versão do trabalho publicada neste periódico (ex.: publicar em repositório institucional ou como capítulo de livro), com reconhecimento de autoria e publicação inicial neste periódico.</li>
 	<li>Autores têm permissão e são estimulados a publicar e distribuir seu trabalho online (ex.: em repositórios institucionais ou na sua página pessoal) a qualquer ponto antes ou durante o processo editorial, já que isso pode gerar alterações produtivas, bem como aumentar o impacto e a citação do trabalho publicado (Veja <a target="_new" href="http://opcit.eprints.org/oacitation-biblio.html">O Efeito do Acesso Livre</a>).</li>
 </ol>
 
 <h4>Proposta de Política para Periódicos que oferecem Acesso Livre Adiado</h4>
-Autores que publicam nesta revista concordam com os seguintes termos:
+Autores que publicam neste periódico concordam com os seguintes termos:
 <ol type="a">
-	<li>Autores mantém os direitos autorais e concedem à revista o direito de primeira publicação, com o trabalho licenciado simultaneamente sob uma <a target="_new" href="http://creativecommons.org/licenses/by/3.0/">Licença Creative Commons Attribution</a>  [ESPECIFICAR TEMPO AQUI] após a publicação, permitindo o compartilhamento do trabalho com reconhecimento da autoria do trabalho e publicação inicial nesta revista.</li>
-	 <li>Autores têm autorização para assumir contratos adicionais separadamente, para distribuição não-exclusiva da versão do trabalho publicada nesta revista (ex.: publicar em repositório institucional ou como capítulo de livro), com reconhecimento de autoria e publicação inicial nesta revista.</li>
+	<li>Autores mantém os direitos autorais e concedem à periódico o direito de primeira publicação, com o trabalho licenciado simultaneamente sob uma <a target="_new" href="http://creativecommons.org/licenses/by/3.0/">Licença Creative Commons Attribution</a>  [ESPECIFICAR TEMPO AQUI] após a publicação, permitindo o compartilhamento do trabalho com reconhecimento da autoria do trabalho e publicação inicial neste periódico.</li>
+	 <li>Autores têm autorização para assumir contratos adicionais separadamente, para distribuição não-exclusiva da versão do trabalho publicada neste periódico (ex.: publicar em repositório institucional ou como capítulo de livro), com reconhecimento de autoria e publicação inicial neste periódico.</li>
 	 <li>Autores têm permissão e são estimulados a publicar e distribuir seu trabalho online (ex.: em repositórios institucionais ou na sua página pessoal) a qualquer ponto antes ou durante o processo editorial, já que isso pode gerar alterações produtivas, bem como aumentar o impacto e a citação do trabalho publicado (Veja <a target="_new" href="http://opcit.eprints.org/oacitation-biblio.html">O Efeito do Acesso Livre</a>).</li>
 </ol>]]></message>
 	<message key="manager.setup.referenceLinkingDescription"><![CDATA[<p>Estão disponíveis as seguintes opções para permitir aos leitores localizar versões online dos trabalhos citados pelo autor.</p>
@@ -849,7 +849,7 @@ Autores que publicam nesta revista concordam com os seguintes termos:
 	<message key="submission.layout.noLayoutFile">Nenhum (Enviar versão final da edição de texto como Versão de Prova antes de enviar a solicitação)</message>
 	<message key="submission.layout.referenceLinking">URLs para Referências</message>
 	<message key="donations.thankYou">Obrigado</message>
-	<message key="donations.thankYouMessage">Agradecemos sua contribuição. Ela é de grande valia para a revista.</message>
+	<message key="donations.thankYouMessage">Agradecemos sua contribuição. Ela é de grande valia para o periódico.</message>
 	<message key="payment.loginRequired">É necessário logar para fazer um pagamento.</message>
 	<message key="payment.loginRequired.forArticle"><![CDATA[Documento disponível apenas para assinantes ou exige pagamento para acesso.<br />É necessário logar para fazer um pagamento.]]></message>
 	<message key="payment.loginRequired.forDonation">É necessário logar para fazer uma doação.</message>
@@ -885,7 +885,7 @@ Autores que publicam nesta revista concordam com os seguintes termos:
                 <li>O servidor não possui permissões para conexão remota ao servidor do PKP</li>
 	</ul>
 Idiomas estão disponíveis para download manual no <a href="http://pkp.sfu.ca">portal do PKP</a>.</p>]]></message>
-	<message key="reader.subscriptionRequiredLoginText">Assinatura exigida para acesso ao item. Para verificar sua assinatura, acesse a revista.</message>
+	<message key="reader.subscriptionRequiredLoginText">Assinatura exigida para acesso ao item. Para verificar sua assinatura, acesse o periódico.</message>
 	<message key="about.authorFees">Taxas para Autores</message>
 	<message key="about.authorFeesMessage">Este periódico cobra as seguintes taxas aos autores.</message>
 	<message key="about.memberships">Associação</message>
@@ -894,7 +894,7 @@ Idiomas estão disponíveis para download manual no <a href="http://pkp.sfu.ca">
 	<message key="payment.payNow">Pagar agora</message>
 	<message key="payment.waive">Isenção de Taxa</message>
 	<message key="payment.alreadyPaid">Já foi pago</message>
-	<message key="payment.alreadyPaidMessage">Marque esta opção caso já tenha enviado o pagamento à revista para concluir o processo de submissão. A submissão não será avaliada até o recebimento do pagamento. Clique em "Pagar agora" para instruções sobre o pagamento.</message>
+	<message key="payment.alreadyPaidMessage">Marque esta opção caso já tenha enviado o pagamento à periódico para concluir o processo de submissão. A submissão não será avaliada até o recebimento do pagamento. Clique em "Pagar agora" para instruções sobre o pagamento.</message>
 	<message key="payment.paymentReceived">Pagamento recebido</message>
 	<message key="payment.paymentSent">Pagamento já foi enviado</message>
 	<message key="payment.submission.paySubmission">Pagar taxa de submissão</message>
@@ -904,17 +904,17 @@ Idiomas estão disponíveis para download manual no <a href="http://pkp.sfu.ca">
 	<message key="reviewer.article.reviewFormResponse.form.responseRequired">Preencha os campos obrigatórios.</message>
 	<message key="common.pageHeader.altText">Cabeçalho da página</message>
 	<message key="common.homePageHeader.altText">Cabeçalho da página inicial</message>
-	<message key="common.journalHomepageImage.altText">Imagem para capa da revista</message>
+	<message key="common.journalHomepageImage.altText">Imagem para capa do periódico</message>
 	<message key="article.coverPage.altText">Imagem para capa</message>
 	<message key="article.accessLogoOpen.altText">Acesso Livre</message>
 	<message key="article.accessLogoRestricted.altText">Acesso restrito</message>
-	<message key="user.noRoles.chooseJournal">Seu cadastro não está associado a nenhuma revista. Por favor, escolha uma:</message>
-	<message key="user.noRoles.noRolesForJournal">Seu cadastro não possui nenhum papel nesta revista. Dos papéis disponíveis, escolha quais deseja adotar:</message>
+	<message key="user.noRoles.chooseJournal">Seu cadastro não está associado a nenhum periódico. Por favor, escolha uma:</message>
+	<message key="user.noRoles.noRolesForJournal">Seu cadastro não possui nenhum papel neste periódico. Dos papéis disponíveis, escolha quais deseja adotar:</message>
 	<message key="user.noRoles.submitArticle">Submeter artigo</message>
 	<message key="user.noRoles.submitArticleRegClosed">Enviar submissão: o cadastro de autores está atualmente desabilitado.</message>
 	<message key="user.noRoles.regReviewer">Cadastrar como avaliador</message>
 	<message key="user.noRoles.regReviewerClosed">Cadastrar como avaliador: o cadastro de avaliadores está atualmente desabilitado.</message>
-	<message key="issue.coverPage.altText">Capa da revista</message>
+	<message key="issue.coverPage.altText">Capa do periódico</message>
 	<message key="plugins.categories.implicitAuth">Plugins de Autenticação Implícita</message>
 	<message key="plugins.categories.implicitAuth.description">Plugins de Autenticação Implícita implementam suporte para autenticação de usuários baseada nos cabeçalhos HTTP.</message>
 	<message key="submission.layout.publicGalleyId">Identificador Público de Composição</message>
@@ -963,18 +963,18 @@ Idiomas estão disponíveis para download manual no <a href="http://pkp.sfu.ca">
 
 Pode-se opcionalmente informar o motivo pelo qual está sendo desativado o cadastro.</message>
 	<message key="editor.submissionReview.notes"><![CDATA[<ol>
-        <li>Itens marcados indicam que uma ação é exigida por parte do editor, classificados assim:</li>
-                <ul>
-                        <li class="highlightREviewerNotNotified">Um revisor foi designado mas não foi notificado por email</li>
-                        <li class="highlightNoDecision">Todos os revisores enviaram uma resposta, mas nenhuma decisão foi gravada</li>
-                        <li class="highlightRevisedCopyUploaded">Autor subiu uma revisão de manuscrito</li>
-                        <li class="highlightReviewerConfirmationOverdue">Revisor está atrasado para confirmar um convite para revisão</li>
-                        <li class="highlightReviewerCompletionOverdue">Revisor está atrasado para completar revisão</li>
-                </ul>
-        </li> 
+	<li>Itens marcados indicam que uma ação é exigida por parte do editor, classificados assim:</li>
+		<ul>
+			<li class="highlightREviewerNotNotified">Um revisor foi designado mas não foi notificado por email</li>
+			<li class="highlightNoDecision">Todos os revisores enviaram uma resposta, mas nenhuma decisão foi gravada</li>
+			<li class="highlightRevisedCopyUploaded">Autor subiu uma revisão de manuscrito</li>
+			<li class="highlightReviewerConfirmationOverdue">Revisor está atrasado para confirmar um convite para revisão</li>
+			<li class="highlightReviewerCompletionOverdue">Revisor está atrasado para completar revisão</li>
+		</ul>
+	</li> 
         <li>"Prazo" é preenchido quando o avaliador indica disponibilidade para realizar a avaliação; exibe o tempo em semanas até a data de entrega da avaliação ou (-) semanas quando está atrasado.</li>
 </ol>]]></message>
-	<message key="reviewer.article.reviewGuidelinesDescription">As Diretrizes para Avaliação fornecerão aos avaliadores critérios necessários para julgar se uma submissão é adequada para publicação no periódico, e podem incluir quaisquer instruções especiais para preparar uma avaliação efetiva e construtiva. Ao entrar na avaliação, os avaliadores terão acesso a dois campos de texto aberto, sendo o primeiro "para autor e editor" e o segundo para "editor apenas". Como opção alternativa, o Editor Gerente pode criar formulários específicos acessando "Formulários de Avaliação", na Administração da revista. Em todos os casos, os editores terão a opção de incluir as avaliações nas mensagens, ao se comunicarem com o autor.</message>
+	<message key="reviewer.article.reviewGuidelinesDescription">As Diretrizes para Avaliação fornecerão aos avaliadores critérios necessários para julgar se uma submissão é adequada para publicação no periódico, e podem incluir quaisquer instruções especiais para preparar uma avaliação efetiva e construtiva. Ao entrar na avaliação, os avaliadores terão acesso a dois campos de texto aberto, sendo o primeiro "para autor e editor" e o segundo para "editor apenas". Como opção alternativa, o Editor Gerente pode criar formulários específicos acessando "Formulários de Avaliação", na Administração do periódico. Em todos os casos, os editores terão a opção de incluir as avaliações nas mensagens, ao se comunicarem com o autor.</message>
 	<message key="user.subscriptions.mySubscriptions">Minhas Assinaturas</message>
 	<message key="user.subscriptions.individualSubscriptions">Assinatura Individual</message>
 	<message key="user.subscriptions.institutionalSubscriptions">Assinatura Institucional</message>
@@ -1015,7 +1015,7 @@ Pode-se opcionalmente informar o motivo pelo qual está sendo desativado o cadas
 	<message key="payment.subscription.purchase">Adquirir Assinatura</message>
 	<message key="installer.installApplication">Instalar o sistema</message>
 	<message key="installer.upgradeApplication">Atualizar o sistema</message>
-	<message key="notification.mailListDescription">Informe seu endereço de e-mail para receber notificações imediatas sobre conteúdo importante recentemente publicado na revista.</message>
+	<message key="notification.mailListDescription">Informe seu endereço de e-mail para receber notificações imediatas sobre conteúdo importante recentemente publicado no periódico.</message>
 	<message key="notification.notificationsPublicDescription"><![CDATA[Esta página exibe atualizações importantes associadas a este periódico, como lançamento de edições e notícias. Assine as notificações através de canais RSS (clicando nas imagens à direita), ou <a href="{$emailUrl}">por e-mail.</a>]]></message>
 	<message key="notification.type.articleSubmitted">Um novo artigo, "{$title}", foi submetido.</message>
 	<message key="notification.type.copyeditComment">O Editor de Texto fez um comentário sobre ""{$title}".</message>

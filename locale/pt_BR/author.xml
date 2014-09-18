@@ -32,7 +32,7 @@
 	<message key="author.submit.supplementaryFiles">4. Transferência de documentos suplementares</message>
 	<message key="author.submit.confirmation">5. Confirmação</message>
 	<message key="author.submit.cancelSubmission">A submissão pode ser concluída em uma data posterior, clicando em Submissões Ativas nas opções da sua página de autor.</message>
-	<message key="author.submit.notAccepting">A revista não está aceitando submissões neste momento.</message>
+	<message key="author.submit.notAccepting">A periódico não está aceitando submissões neste momento.</message>
 	<message key="author.submit.requestWaiver">Solicitar isenção de taxas</message>
 	<message key="author.submit.qualifyForWaiver">Solicito considerar isenção de Taxa de Submissão para este artigo</message>
 	<message key="author.submit.addReasonsForWaiver">Informe no campo de comentários motivos para a isenção de taxa.</message>
@@ -44,12 +44,12 @@
 	<message key="author.submit.howToSubmit"><![CDATA[Em caso de dificuldades com o processo, entre em contato com <a href="mailto:{$supportEmail}">{$supportName}</a> via e-mail ou pelo telefone {$supportPhone} para suporte.]]></message>
 	<message key="author.submit.howToSubmitNoPhone"><![CDATA[Em caso de dificuldades com o processo, entre em contato com <a href="mailto:{$supportEmail}">{$supportName}</a> via e-mail para suporte.]]></message>
 	<message key="author.submit.journalSection">Seção</message>
-	<message key="author.submit.journalSectionDescription"><![CDATA[Escolha a seção apropriada para a submissão (leia Seções e Políticas na página <a href="{$aboutUrl}">Sobre</a> a revista).]]></message>
+	<message key="author.submit.journalSectionDescription"><![CDATA[Escolha a seção apropriada para a submissão (leia Seções e Políticas na página <a href="{$aboutUrl}">Sobre</a> o periódico).]]></message>
 	<message key="author.submit.selectSection">Escolha uma seção...</message>
 	<message key="author.submit.submissionChecklist">Condições para submissão</message>
 	<message key="author.submit.submissionChecklistDescription">Confirme que a submissão está em conformidade com as condições seguintes, marcando as caixas de seleção, para prosseguir ao Passo 2 do processo.</message>
 	<message key="author.submit.verifyChecklist">Todas as condições devem ser satisfeitas antes de continuar.</message>
-	<message key="author.submit.copyrightNoticeAgree">Os autores concordam com os termos da Declaração de Direito Autoral, que se aplicará a esta submissão caso seja publicada nesta revista (comentários ao editor podem ser incluídos a seguir).</message>
+	<message key="author.submit.copyrightNoticeAgree">Os autores concordam com os termos da Declaração de Direito Autoral, que se aplicará a esta submissão caso seja publicada neste periódico (comentários ao editor podem ser incluídos a seguir).</message>
 	<message key="author.submit.copyrightNoticeAgreeRequired">É obrigatório aceitar a Declaração de Direito Autoral para continuar!</message>
 	<message key="author.submit.commentsForEditor">Comentários para o editor</message>
 	<message key="author.submit.comments">Digite o texto (opcional)</message>
@@ -59,7 +59,7 @@
 	<message key="author.submit.selectPrincipalContact">Contato principal para correspondência.</message>
 	<message key="author.submit.addAuthor">Incluir autor</message>
 	<message key="author.submit.deleteAuthor">Excluir autor</message>
-	<message key="author.submit.submissionIndexingDescription">Digite termos que descrevam da melhor maneira o conteúdo da submissão, segundo as categorias utilizadas pela revista e os exemplos oferecidos pelo editor. Separe os termos com ponto-e-vírgula (termo1; termo2; termo3).</message>
+	<message key="author.submit.submissionIndexingDescription">Digite termos que descrevam da melhor maneira o conteúdo da submissão, segundo as categorias utilizadas pelo periódico e os exemplos oferecidos pelo editor. Separe os termos com ponto-e-vírgula (termo1; termo2; termo3).</message>
 	<message key="author.submit.coverageInstructions">Refere-se à localização ou cobertura geográfica, cronológica ou histórica, e/ou às características de amostragem da pesquisa.</message>
 	<message key="author.submit.subjectClassInstructions">Use o sistema de classificação definido para escolher termos específicos da área do conhecimento e numeração se apropriado.</message>
 	<message key="author.submit.languageInstructions"><![CDATA[Português=pt; English=en; French=fr; Spanish=es. <a href="http://www.loc.gov/standards/iso639-2/php/code_list.php" target="_blank">Códigos Adicionais</a>.]]></message>
@@ -105,16 +105,16 @@
 	<message key="author.submit.suppFile.form.descriptionRequired">Descrição obrigatória.</message>
 	<message key="author.suppFile.suppFilePublicIdentificationExists">Documento suplementar público já existente.</message>
 	<message key="author.suppFile.publicSuppFileIdentifier">Identificador de documento suplementar público</message>
-	<message key="author.submit.confirmationDescription">Após concluídos e verificados os passos anteriores, clique em "Concluir submissão" para enviar seu trabalho para a revista {$journalTitle}. Um e-mail de confirmação será enviado. Acompanhe a situação da submissão, dentro do processo editorial da revista, acessando o sistema com o papel de autor. Agradecemos seu interesse em contribuir com seu trabalho para a revista {$journalTitle}.</message>
+	<message key="author.submit.confirmationDescription">Após concluídos e verificados os passos anteriores, clique em "Concluir submissão" para enviar seu trabalho para o periódico {$journalTitle}. Um e-mail de confirmação será enviado. Acompanhe a situação da submissão, dentro do processo editorial do periódico, acessando o sistema com o papel de autor. Agradecemos seu interesse em contribuir com seu trabalho para o periódico {$journalTitle}.</message>
 	<message key="author.submit.noFiles">Nenhum documento anexado à submissão.</message>
 	<message key="author.submit.filesSummary">Resumo de documentos</message>
 	<message key="author.submit.finishSubmission">Concluir submissão</message>
-	<message key="author.submit.submissionComplete">Submissão concluída. Agradecemos seu interesse em contribuir com seu trabalho para a revista {$journalTitle}.</message>
-	<message key="author.submit.expedite"><![CDATA[Caso a submissão já esteja em um formato pronto para publicação, sem a necessidade de revisão, edição ou layout, ela pode ser enviada diretamente para o último passo, a Edição da submissão <a href="{$expediteUrl}" class="action">clicando aqui!</a>. (Aviso: Apenas Editores da revista possuem esta opção para suas submissões.)]]></message>
+	<message key="author.submit.submissionComplete">Submissão concluída. Agradecemos seu interesse em contribuir com seu trabalho para o periódico {$journalTitle}.</message>
+	<message key="author.submit.expedite"><![CDATA[Caso a submissão já esteja em um formato pronto para publicação, sem a necessidade de revisão, edição ou layout, ela pode ser enviada diretamente para o último passo, a Edição da submissão <a href="{$expediteUrl}" class="action">clicando aqui!</a>. (Aviso: Apenas Editores do periódico possuem esta opção para suas submissões.)]]></message>
 	<message key="author.article.uploadAuthorVersion">Transferir Versão do Autor</message>
 	<message key="author.article.copyeditedFile">Documento editado</message>
 	<message key="author.article.authorRevisedFile">Versão do Autor</message>
-	<message key="author.submit.authorSubmitLoginMessage">É necessário criar um cadastro para submeter documentos à revista. Isto permite aos editores acompanhar a submissão e notificá-lo das mudanças na situação da submissão, ou caso informações adicionais sejam necessárias para dar continuidade ao processo editorial.</message>
+	<message key="author.submit.authorSubmitLoginMessage">É necessário criar um cadastro para submeter documentos ao periódico. Isto permite aos editores acompanhar a submissão e notificá-lo das mudanças na situação da submissão, ou caso informações adicionais sejam necessárias para dar continuidade ao processo editorial.</message>
 	<message key="author.submit.mustEnterWaiverReason">Informe a motivação no espaço disponível, caso esteja solicitando isenção de taxa.</message>
 	<message key="author.submissions.queuedReviewSubsequent">Em avaliação: rodada {$round}</message>
 	<message key="author.submissions.queuedReviewRevisions">Em avaliação: Revisões Requeridas</message>
