@@ -33,21 +33,9 @@ class ScieloThemePlugin extends ThemePlugin {
 	 */
 	function callbackDisplay($hookName, $args) {
 		$smarty = $args[0]; /* @var $smarty Smarty */
-		$smarty->register_outputfilter(array(&$this, 'addPluginClassOutputFilter'));
 		$smarty->register_prefilter(array(&$this, 'addArticleTitleInWorkflowPagesHeader'));
 
 		return false;
-	}
-
-	/**
-	 * Output filter to add the plugin css class into the body html element.
-	 * @param $output string
-	 * @param $smarty Smarty
-	 * @return string
-	 */
-	function addPluginClassOutputFilter($output, &$smarty) {
-		$output = str_replace('<body id="pkp-common-openJournalSystems">', '<body id="pkp-common-openJournalSystems" class="scieloTheme">', $output);
-		return $output;
 	}
 
 	/**

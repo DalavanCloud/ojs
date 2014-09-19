@@ -12,7 +12,7 @@ body {
 	background-color:#ffffff;
 }
 
-body.scieloTheme ul.menu a {
+ul.menu a {
 	color: #017201;
 }
 
@@ -29,7 +29,7 @@ form {
 	padding: 6px;
 }
 
-#sidebar a, a:link, #breadcrumb a:link, a.current {
+#sidebar a, a:link, #breadcrumb a:link, a.current, a:visited {
 	color: #555;
 	text-decoration: none;
 }
