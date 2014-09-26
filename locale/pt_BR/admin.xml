@@ -13,14 +13,14 @@
   -->
 
 <locale name="pt_BR" full_name = "Português (Brasil)">
-	<message key="admin.hostedJournals">Revistas hospedadas</message>
-	<message key="admin.settings.journalRedirect">Redirecionamento para revista</message>
-	<message key="admin.settings.journalRedirectInstructions">As solicitações realizadas ao portal serão direcionadas a esta revista. Esta opção pode ser útil caso o Portal hospede apenas uma revista.</message>
+	<message key="admin.hostedJournals">Periódicos hospedados</message>
+	<message key="admin.settings.journalRedirect">Redirecionamento para o periódico</message>
+	<message key="admin.settings.journalRedirectInstructions">As solicitações realizadas ao portal serão direcionadas a este periódico. Esta opção pode ser útil caso o Portal hospede apenas um periódico.</message>
 	<message key="admin.settings.noJournalRedirect">Não redirecionar</message>
-	<message key="admin.languages.primaryLocaleInstructions">Este será o idioma padrão para o portal e todas as revistas hospedadas.</message>
-	<message key="admin.languages.supportedLocalesInstructions">Os idiomas selecionados estarão disponíveis para todas as revistas no portal, e constarão da lista de idiomas que aparece em cada página do sistema (esta opção pode ser desativada individualmente por revista). Caso não sejam selecionados vários idiomas, a lista de idiomas não estará disponível e a opção "configurações de idioma" não estará disponível para as revistas.</message>
-	<message key="admin.languages.confirmUninstall">Deseja realmente remover este idioma? A execução pode afetar revistas hospedas que podem estar utilizando o idioma.</message>
-	<message key="admin.languages.installNewLocalesInstructions">Selecione idiomas adicionais para uso no sistema. Os idiomas devem ser instalados antes que possam ser utilizados pelas revistas hospedadas. Veja a documentação para informações sobre como incluir novos idiomas no sistema.</message>
+	<message key="admin.languages.primaryLocaleInstructions">Este será o idioma padrão para o portal e todos os periódicos hospedados.</message>
+	<message key="admin.languages.supportedLocalesInstructions">Os idiomas selecionados estarão disponíveis para todos os periódicos no portal, e constarão da lista de idiomas que aparece em cada página do sistema (esta opção pode ser desativada individualmente por periódico). Caso não sejam selecionados vários idiomas, a lista de idiomas não estará disponível e a opção "configurações de idioma" não estará disponível para os periódicos.</message>
+	<message key="admin.languages.confirmUninstall">Deseja realmente remover este idioma? A execução pode afetar periódicos hospedas que podem estar utilizando o idioma.</message>
+	<message key="admin.languages.installNewLocalesInstructions">Selecione idiomas adicionais para uso no sistema. Os idiomas devem ser instalados antes que possam ser utilizados pelos periódicos hospedados. Veja a documentação para informações sobre como incluir novos idiomas no sistema.</message>
 	<message key="admin.languages.downloadLocales">Baixar idiomas</message>
 	<message key="admin.languages.downloadFailed">Erro ao baixar idioma. A seguir, um detalhamento do(s) erro(s).</message>
 	<message key="admin.languages.localeInstalled">Idioma "{$locale}" instalado.</message>
@@ -35,17 +35,17 @@
 	<message key="admin.systemVersion">Versão do OJS</message>
 	<message key="admin.systemConfiguration">Configuração do OJS</message>
 	<message key="admin.systemConfigurationDescription"><![CDATA[Configurações do OJS no documento <tt>config.inc.php</tt>.]]></message>
-	<message key="admin.journals.journalSettings">Configurações da revista</message>
-	<message key="admin.journals.noneCreated">Nenhuma revista foi criada.</message>
-	<message key="admin.journals.confirmDelete">Deseja realmente excluir permanentemente esta revista e seu conteúdo?</message>
-	<message key="admin.journals.create">Criar revista</message>
-	<message key="admin.journals.createInstructions">Seu cadastro como Editor-Gerente da revista será automático. Após a criação de uma revista, acesse-a como gerente e continue com as configurações da revista e cadastro de usuários.</message>
-	<message key="admin.journals.urlWillBe">Geralmente é usado um acrônimo que identifica o periódico. A URL da revista será: {$sampleUrl}</message>
+	<message key="admin.journals.journalSettings">Configurações do periódico</message>
+	<message key="admin.journals.noneCreated">Nenhum periódico foi criado.</message>
+	<message key="admin.journals.confirmDelete">Deseja realmente excluir permanentemente este periódico e seu conteúdo?</message>
+	<message key="admin.journals.create">Criar periódico</message>
+	<message key="admin.journals.createInstructions">Seu cadastro como Editor-Gerente do periódico será automático. Após a criação de um periódico, acesse-o como gerente e continue com as configurações do periódico e cadastro de usuários.</message>
+	<message key="admin.journals.urlWillBe">Geralmente é usado um acrônimo que identifica o periódico. A URL do periódico será: {$sampleUrl}</message>
 	<message key="admin.journals.form.titleRequired">O título é obrigatório</message>
 	<message key="admin.journals.form.pathRequired">O caminho é obrigatório.</message>
 	<message key="admin.journals.form.pathAlphaNumeric">O caminho deve conter apenas caracteres alfanuméricos, sublinhado, hífens, e deve começar e terminar com um caractere alfanumérico.</message>
-	<message key="admin.journals.form.pathExists">O caminho selecionado já está em uso por outra revista.</message>
-	<message key="admin.journals.enableJournalInstructions">Permitir Acesso Livre a esta revista no portal</message>
+	<message key="admin.journals.form.pathExists">O caminho selecionado já está em uso por outro periódico.</message>
+	<message key="admin.journals.enableJournalInstructions">Permitir Acesso Livre a este periódico no portal</message>
 	<message key="admin.journals.journalDescription">Descrição</message>
 	<message key="admin.journal.pathImportInstructions">Caminho existente ou caminho a ser criado (ex.:</message>
 	<message key="admin.journals.importSubscriptions">Importar assinaturas</message>

@@ -33,8 +33,8 @@
 	<message key="editor.notifyUsers">Notificar Usuários</message>
 	<message key="editor.notifyUsers.inProgress">Notificando usuários...</message>
 	<message key="editor.usersNotified">Usários notificados</message>
-	<message key="editor.notifyUsers.allUsers">Enviar esta mensagem a todos os usuários associados a esta revista ({$count} usuários)</message>
-	<message key="editor.notifyUsers.interestedUsers">Enviar esta mensagem a todos os usuários associados a esta revista que indicaram desejar receber notificações ({$count} usuários)</message>
+	<message key="editor.notifyUsers.allUsers">Enviar esta mensagem a todos os usuários associados a este periódico ({$count} usuários)</message>
+	<message key="editor.notifyUsers.interestedUsers">Enviar esta mensagem a todos os usuários associados a este periódico que indicaram desejar receber notificações ({$count} usuários)</message>
 	<message key="editor.notifyUsers.includeToc">Incluir sumário da edição:</message>
 	<message key="editor.editorAdministration">Administração do editor</message>
 	<message key="editor.issues.createIssue">Incluir edição</message>
@@ -78,7 +78,7 @@
 	<message key="editor.issues.access">Acesso</message>
 	<message key="editor.issues.cover">Capa</message>
 	<message key="editor.issues.confirmIssueDelete">Todos os artigos voltarão à fila de agendamento e todos os documentos associados serão excluídos permanentemente. Deseja realmente excluir esta edição?</message>
-	<message key="editor.issues.resetIssueOrder"><![CDATA[Esta revista utiliza ordenação personalizada de edições. <a href="{$url}" class="action">Restaurar para a configuração padrão</a>]]></message>
+	<message key="editor.issues.resetIssueOrder"><![CDATA[Este periódico utiliza ordenação personalizada de edições. <a href="{$url}" class="action">Restaurar para a configuração padrão</a>]]></message>
 	<message key="editor.issues.resetSectionOrder"><![CDATA[Esta edição usa uma ordenação de seções personalizada. <a href="{$url}" class="action">Restaurar ordenação padrão</a>]]></message>
 	<message key="editor.issues.issueData">Dados da edição</message>
 	<message key="editor.issues.saveChanges">Salvar alterações do sumário?</message>

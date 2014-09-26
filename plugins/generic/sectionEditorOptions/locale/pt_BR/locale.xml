@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/generic/sectionEditorOptions/locale/pt_BR/locale.xml
+  *
+  * Copyright (c) 2013-2014 Simon Fraser University Library
+  * Copyright (c) 2003-2014 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings
+  -->
+
+<locale name="pt_BR" full_name="Português (Brasil)">
+	<message key="plugins.generic.sectionEditorOptions.displayName">Opções de trabalho do editor de seção.</message>
+	<message key="plugins.generic.sectionEditorOptions.description">Defina opções de trabalho para customizar o papel dos editores de seção da revista, limitando as operações que os mesmos podem executar.</message>
+	<message key="plugins.generic.sectionEditorOptions.settings.saved">Configurações do plugin de opções do editor de seção salvas com sucesso</message>
+	
+	<message key="plugins.generic.sectionEditorOptions.settings.workflowOptions">Opções de trabalho do editor de seção:</message>
+	<message key="plugins.generic.sectionEditorOptions.settings.denyEditorialDecision">Bloquear gravação de decisão final</message>
+	<message key="plugins.generic.sectionEditorOptions.settings.denyEditorialDecision.description">O Editor de Seção não poderá finalizar uma revisão e gravar a decisão final.</message>
+	<message key="plugins.generic.sectionEditorOptions.settings.denyContact">Bloquear contato por email</message>
+	<message key="plugins.generic.sectionEditorOptions.settings.denyContact.description">Evita o contato entre o Autor e o Editor de Seção, omitindo para o Autor a identidade do Editor de Seção e impedindo o Editor de Seção de enviar e-mail para o Autor. Para essa opção funcionar corretamente o Editor deve primeiramente incluir-se e depois selecionar um Editor de Seção.</message>
+	<message key="plugins.generic.sectionEditorOptions.settings.denyReviewFilesAccess">Bloquear envio de arquivos de revisão.</message>
+	<message key="plugins.generic.sectionEditorOptions.settings.denyReviewFilesAccess.description">Esta opção evita que o Editor de Seção acesse a guia "Versão de Avaliação", não sendo possível subir novas versões de documentos para o processo de revisão.</message>
+	
+	<message key="plugins.generic.sectionEditorOptions.message.denyDecision">A configuração atual do periódico não permite a execução desta operação.</message>
+	
+	<message key="plugins.generic.sectionEditorOptions.message.blockedInfo">Edição cega</message>
+	<message key="plugins.generic.sectionEditorOptions.message.formBlockedInfo">Essa funcionalidade está bloqueada.</message>
+</locale>

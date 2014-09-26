@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/generic/reviewAskColors/locale/es_ES/locale.xml
+  *
+  * Copyright (c) 2013-2014 Simon Fraser University Library
+  * Copyright (c) 2003-2014 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings
+  -->
+
+<locale name="es_ES" full_name="Español (España)">
+	<message key="plugins.generic.reviewAskColors.displayName">Cores da Avaliação</message>
+	<message key="plugins.generic.reviewAskColors.description">Define cores para cada estado da avaliação exibido nas listas de submissão, na coluna Avaliação.</message>
+	<message key="plugins.generic.reviewAskColors.settings.saved">Configurações do plugin de cores da avaliação salvas com sucesso</message>
+	<message key="plugins.generic.reviewAskColors.submissionReview.notes"><![CDATA[
+                <div class="reviewAskDueNotesWrapper">
+                <div class="review_ask_colors_plugin_notes_reviewCompleted">Fechas en azul representan evaluaciones concluidas.</div>
+                <div class="review_ask_colors_plugin_notes_reviewProcess">Fechas en  verde representan evaluaciones  en proceso y no plazo establecido.</div>
+                <div class="review_ask_colors_plugin_notes_reviewLate">Fechas en rojo representan evaluaciones en proceso y fuera del plazo establecido.</div>
+                <div>Fechas  en rajado representan evaluaciones canceladas o recusadas.</div></div>
+        ]]></message>
+
+</locale>

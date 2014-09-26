@@ -1,0 +1,126 @@
+/**
+ * scielo.css
+ *
+ * Copyright (c) 2013-2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * Scielo theme.
+ *
+ */
+body {
+	background-color:#ffffff;
+}
+
+ul.menu a {
+	color: #017201;
+}
+
+a {
+	border-bottom: 1px dotted #aaa;	
+}
+
+a:hover, body.scieloTheme a:hover {
+	background-color: transparent;
+	border-bottom: none;
+}
+
+form {
+	padding: 6px;
+}
+
+#sidebar a, a:link, #breadcrumb a:link, a.current, a:visited {
+	color: #555;
+	text-decoration: none;
+}
+
+#headerTitle {
+	margin: 0 auto 20px;
+	padding: 0;
+	text-align: center;
+}
+
+#header h1 {
+	float: left;
+	margin: 0;
+	margin: 0 auto;
+	padding: 0.5em 0 0.25em 10%;
+}
+
+#header h2 {
+	font-family: Arial Narrow,sanserif;
+	font-size: 120%;
+	margin: 0 0 0 20px;
+	padding: 10px 0 0;
+	width: 380px;
+}
+
+#main h2 {
+  border-bottom: 1px solid #dedede;
+  color: #aa0000;
+  font-family: Arial Narrow,sanserif;
+  font-weight: normal;
+  margin: 0 1em 0.2em 0;
+  padding: 0.5em 0 0.2em;
+}
+
+#sidebar div.block span.blockTitle {
+	color: #aa0000;
+	display: block;
+	font-size: 1em;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	padding: 0.5em 0;
+	text-transform: uppercase;
+}
+
+#sidebarLanguageToggle form, #sidebarNavigation form, #sidebarUser form {
+	background-color: #eeeeee;
+}
+
+#content {
+	border-top: none;
+}
+
+#content ul.menu {
+	margin-bottom: 10px;
+}
+
+#navbar {
+	border-bottom: none;
+}
+
+.file, .action {
+	border-bottom: 1px dotted #017201;
+	color: #017201 !important;
+	font-size: 0.85em;
+}
+
+input.textField, select.selectMenu, textarea.textArea, input.uploadField {
+	background-color: #fff;
+	border: 1px solid #999;
+	color: #000;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 1em;
+}
+
+#content ul.menu li {
+	background: none repeat scroll 0 0 #fff;
+	border-color: #aaa #aaa -moz-use-text-color;
+	border-image: none;
+	border-style: solid solid none;
+	border-width: 1px 1px medium;
+	display: inline;
+	margin: 0;
+	padding: 3px 6px;
+	text-align: center !important;
+}
+
+#content ul.menu li.current {
+	background: none repeat scroll 0 0 #ededed;
+	font-weight: bold;
+}
+
+#sidebarInformation, #sidebarNavigation, #navbar li#search, #navbar li#current, #navbar li#archives {
+	display: none;
+}
