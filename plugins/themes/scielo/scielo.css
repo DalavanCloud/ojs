@@ -40,8 +40,19 @@ form {
 	text-align: center;
 }
 
+#header h1:before {
+	background-image: url("public/site/logo_scielo.gif");
+	background-repeat: no-repeat;
+	content: " ";
+	display: inline-block;
+	height: 60px;
+	vertical-align: top;
+	width: 76px;
+}
+
 #header h1 {
 	float: left;
+	font-size: 130% !important;
 	margin: 0;
 	margin: 0 auto;
 	padding: 0.5em 0 0.25em 10%;
