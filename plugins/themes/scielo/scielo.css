@@ -12,8 +12,8 @@ body {
 	background-color:#ffffff;
 }
 
-ul.menu a {
-	color: #017201;
+ul.menu a, ul.menu a:visited {
+	color: #017201 !important;
 }
 
 a {
@@ -40,8 +40,19 @@ form {
 	text-align: center;
 }
 
+#header h1:before {
+	background-image: url("public/site/logo_scielo.gif");
+	background-repeat: no-repeat;
+	content: " ";
+	display: inline-block;
+	height: 60px;
+	vertical-align: top;
+	width: 76px;
+}
+
 #header h1 {
 	float: left;
+	font-size: 130% !important;
 	margin: 0;
 	margin: 0 auto;
 	padding: 0.5em 0 0.25em 10%;
@@ -96,6 +107,10 @@ form {
 	font-size: 0.85em;
 }
 
+.file:visited, .action:visited {
+	color: #017201 !important;
+}
+
 input.textField, select.selectMenu, textarea.textArea, input.uploadField {
 	background-color: #fff;
 	border: 1px solid #999;
@@ -104,23 +119,16 @@ input.textField, select.selectMenu, textarea.textArea, input.uploadField {
 	font-size: 1em;
 }
 
-#content ul.menu li {
-	background: none repeat scroll 0 0 #fff;
-	border-color: #aaa #aaa -moz-use-text-color;
-	border-image: none;
-	border-style: solid solid none;
-	border-width: 1px 1px medium;
-	display: inline;
-	margin: 0;
-	padding: 3px 6px;
-	text-align: center !important;
-}
-
 #content ul.menu li.current {
-	background: none repeat scroll 0 0 #ededed;
 	font-weight: bold;
 }
 
 #sidebarInformation, #sidebarNavigation, #navbar li#search, #navbar li#current, #navbar li#archives {
 	display: none;
+}
+
+.defaultButton {
+	background-color: #e8e8e1 !important;
+	font-weight: inherit !important;
+	color: inherit !important;
 }
