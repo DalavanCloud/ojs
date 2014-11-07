@@ -41,7 +41,7 @@ form {
 }
 
 #header h1:before {
-	background-image: url("public/site/logo_scielo.gif");
+	background-image: url("/public/site/logo_scielo.gif");
 	background-repeat: no-repeat;
 	content: " ";
 	display: inline-block;
