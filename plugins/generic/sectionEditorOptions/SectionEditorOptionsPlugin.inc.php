@@ -412,33 +412,14 @@ class SectionEditorOptionsPlugin extends GenericPlugin {
 		}
 
 		if (!$requestedUser) return false;
+		
 
 		// Test if current user is a section editor.
 		$sections = array();
 		if (Validation::isSectionEditor($journalId) && is_a($requestedUser, 'Author')) {
-			// Get all section editor sections.
-			$sectionDao =& DAORegistry::getDAO('SectionDAO'); /* @var $sectionDao SectionDAO */
-			$journalSections = $sectionDao->getEditorSections($journalId);
-			if (!isset($journalSections[$user->getId()])) {
-				// No section, no need to block.
-				return false;
-			}
-
-			$sections = $journalSections[$user->getId()];
-			$sectionIds = array();
-
-			foreach ($sections as $section) {
-				$sectionIds[] = $section->getId();
-			}
-
 			$submissionId = $requestedUser->getSubmissionId();
-			$submissionDao =& DAORegistry::getDAO('AuthorSubmissionDAO'); /* @var $submissionDao AuthorSubmissionDAO */
-			$submission =& $submissionDao->getAuthorSubmission($submissionId);
-
-			if (!in_array($submission->getSectionId(), $sectionIds)) {
-				// Don't need to block.
-				return false;
-			}
+						
+			if (!$this->_isSectionEditor($submissionId, $user->getId())) return false;
 		} else {
 			// Users with any other roles should see all.
 			$roleDao =& DAORegistry::getDAO('RoleDAO'); /* @var $roleDao RoleDAO */
@@ -457,16 +438,8 @@ class SectionEditorOptionsPlugin extends GenericPlugin {
 
 			$wantedOperations = array('submission', 'submissionReview', 'submissionEditing');
 			if ($page == 'author' && in_array($op, $wantedOperations)) {
-				// Requested submission is assigned to the section editor?
 				$submissionId = current($args);
-				$sectionEditorSubmissionDao =& DAORegistry::getDAO('SectionEditorSubmissionDAO'); /* @var $sectionEditorSubmissionDao SectionEditorSubmissionDAO */
-				$submission = $sectionEditorSubmissionDao->getSectionEditorSubmission($submissionId);
-				$sectionId = $submission->getSectionId();
-
-				$sectionEditorsDao =& DAORegistry::getDAO('SectionEditorsDAO'); /* @var $sectionEditorsDao SectionEditorsDAO */
-				if (!$sectionEditorsDao->editorExists($journalId, $sectionId, $requestedUser->getId())) {
-					return false;
-				}
+				if (!$this->_isSectionEditor($submissionId, $requestedUser->getId())) return false;
 			} else {
 				return false;
 			}
@@ -601,6 +574,30 @@ class SectionEditorOptionsPlugin extends GenericPlugin {
 		}
 
 		return $html;
+	}
+
+	/**
+	 * Check whether or not the passed user is assigned as a section editor
+	 * to the passed submission.
+	 * @param $submissionId int
+	 * @param $userId int
+	 * @return boolean
+	 */
+	function _isSectionEditor($submissionId, $userId) {
+		$sectionEditorSubmissionDao =& DAORegistry::getDAO('SectionEditorSubmissionDAO'); /* @var $sectionEditorSubmissionDao SectionEditorSubmissionDAO */
+		$sectionEditorSubmission =& $sectionEditorSubmissionDao->getSectionEditorSubmission($submissionId);
+		if (!$sectionEditorSubmission) return false;
+		
+		// Is the user assigned to the submission as a section editor?
+		$editAssignments = $sectionEditorSubmission->getEditAssignments();
+		$isSubmissionSectionEditor = false;
+		foreach ($editAssignments as $editAssignment) {
+			if ($editAssignment->getEditorId() == $userId) {
+				$isSubmissionSectionEditor = true;
+			}
+		}
+
+		return $isSubmissionSectionEditor;
 	}
 }
 
