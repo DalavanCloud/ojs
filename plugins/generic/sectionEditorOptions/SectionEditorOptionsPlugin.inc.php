@@ -419,7 +419,7 @@ class SectionEditorOptionsPlugin extends GenericPlugin {
 		if (Validation::isSectionEditor($journalId) && is_a($requestedUser, 'Author')) {
 			$submissionId = $requestedUser->getSubmissionId();
 						
-			if (!$this->_isSectionEditor($submissionId, $user->getId())) return false;
+			if (!$this->_isSectionEditorOnly($submissionId, $user->getId())) return false;
 		} else {
 			// Users with any other roles should see all.
 			$roleDao =& DAORegistry::getDAO('RoleDAO'); /* @var $roleDao RoleDAO */
@@ -439,7 +439,7 @@ class SectionEditorOptionsPlugin extends GenericPlugin {
 			$wantedOperations = array('submission', 'submissionReview', 'submissionEditing');
 			if ($page == 'author' && in_array($op, $wantedOperations)) {
 				$submissionId = current($args);
-				if (!$this->_isSectionEditor($submissionId, $requestedUser->getId())) return false;
+				if (!$this->_isSectionEditorOnly($submissionId, $requestedUser->getId())) return false;
 			} else {
 				return false;
 			}
@@ -578,12 +578,12 @@ class SectionEditorOptionsPlugin extends GenericPlugin {
 
 	/**
 	 * Check whether or not the passed user is assigned as a section editor
-	 * to the passed submission.
+	 * to the passed submission and also if he has only this editorial role.
 	 * @param $submissionId int
 	 * @param $userId int
 	 * @return boolean
 	 */
-	function _isSectionEditor($submissionId, $userId) {
+	function _isSectionEditorOnly($submissionId, $userId) {
 		$sectionEditorSubmissionDao =& DAORegistry::getDAO('SectionEditorSubmissionDAO'); /* @var $sectionEditorSubmissionDao SectionEditorSubmissionDAO */
 		$sectionEditorSubmission =& $sectionEditorSubmissionDao->getSectionEditorSubmission($submissionId);
 		if (!$sectionEditorSubmission) return false;
@@ -594,6 +594,19 @@ class SectionEditorOptionsPlugin extends GenericPlugin {
 		foreach ($editAssignments as $editAssignment) {
 			if ($editAssignment->getEditorId() == $userId) {
 				$isSubmissionSectionEditor = true;
+			}
+		}
+
+		if ($isSubmissionSectionEditor) {
+			// We want only section editors that have no other
+			// editorial role assignment.
+			$roleDao = DAORegistry::getDAO('RoleDAO');
+			$roles = $roleDao->getRolesByUserId($userId);
+			foreach ($roles as $role) {
+				if (in_array($role->getRoleId(), array(ROLE_ID_EDITOR, ROLE_ID_JOURNAL_MANAGER))) {
+					$isSubmissionSectionEditor = false;
+					break;
+				}
 			}
 		}
 

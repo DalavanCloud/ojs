@@ -26,6 +26,6 @@
 	
 	<message key="plugins.generic.sectionEditorOptions.message.denyDecision">A configuração atual do periódico não permite a execução desta operação.</message>
 	
-	<message key="plugins.generic.sectionEditorOptions.message.blockedInfo">Edição cega</message>
+	<message key="plugins.generic.sectionEditorOptions.message.blockedInfo">Oculto</message>
 	<message key="plugins.generic.sectionEditorOptions.message.formBlockedInfo">Essa funcionalidade está bloqueada.</message>
 </locale>
